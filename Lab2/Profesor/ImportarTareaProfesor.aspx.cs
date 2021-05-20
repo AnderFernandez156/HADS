@@ -52,14 +52,15 @@ namespace Lab2
                 xml.Load(Server.MapPath("../APP_DATA/" + DropDownList1.SelectedValue + ".xml"));
                 XmlNodeList TareasXML;
                 TareasXML = xml.GetElementsByTagName("tarea");
+                Funcionalidades.Class1.conectar();
                 foreach (XmlNode tarea in TareasXML)
                 {
-                    Funcionalidades.Class1.conectar();
-                    bool exists = Funcionalidades.Class1.existeTarea(tarea.Attributes["Codigo"].InnerText.ToString());
+
+                    bool exists = Funcionalidades.Class1.existeTarea(tarea.Attributes["codigo"].InnerText.ToString());
                     if (!exists)
                     {
                         DataRow row = tareas.NewRow();
-                        row["Codigo"] = tarea.Attributes["Codigo"].InnerText.ToString();
+                        row["Codigo"] = tarea.Attributes["codigo"].InnerText.ToString();
                         row["Descripcion"] = tarea.ChildNodes[0].InnerText.ToString();
                         row["CodAsig"] = DropDownList1.SelectedValue;
                         row["HEstimadas"] = Convert.ToInt32(tarea.ChildNodes[1].InnerText.ToString());
@@ -73,7 +74,8 @@ namespace Lab2
                 adapter.UpdateCommand = command.GetUpdateCommand();
                 adapter.Update(dataset, "TareasGenericas");
                 adapter.Update(tareas);
-                tareas.AcceptChanges();
+                //tareas.AcceptChanges();
+                Funcionalidades.Class1.desconectar();
                 Label3.Text = "Importadas correctamente";
             }
             catch {
