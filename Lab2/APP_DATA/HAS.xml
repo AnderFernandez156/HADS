@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<tareas>
+  <tarea codigo="HAS20-Lab1">
+    <descripcion>Lab componentes</descripcion>
+    <codasig>HAS</codasig>
+    <hestimadas>6</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="HAS20-Lab10">
+    <descripcion>Sobre django</descripcion>
+    <codasig>HAS</codasig>
+    <hestimadas>10</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="HAS20-Lab2">
+    <descripcion>Web Forms</descripcion>
+    <codasig>HAS</codasig>
+    <hestimadas>12</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="HAS20-Lab4">
+    <descripcion>Laboratorio sobre XML</descripcion>
+    <codasig>HAS</codasig>
+    <hestimadas>12</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+  <tarea codigo="HAS20-Test1">
+    <descripcion>Test 1 de la asignatura</descripcion>
+    <codasig>HAS</codasig>
+    <hestimadas>1</hestimadas>
+    <explotacion>false</explotacion>
+    <tipotarea>Examen</tipotarea>
+  </tarea>
+  <tarea codigo="HAS21-LAB4">
+    <descripcion>Lab sobre ADO.NET</descripcion>
+    <codasig>HAS</codasig>
+    <hestimadas>20</hestimadas>
+    <explotacion>true</explotacion>
+    <tipotarea>Laboratorio</tipotarea>
+  </tarea>
+</tareas>
